@@ -1,5 +1,7 @@
 package dev.marcelo.java;
 
+import dev.marcelo.dep.DummyAPI;
+
 import dev.marcelo.java.pck.Callee;
 import dev.marcelo.java.pck.MEnum;
 
@@ -15,7 +17,14 @@ public class Caller {
     return someInt;
   }
 
-  public void setSomeInt() {
-    this.someInt = Callee.someInt;
+  public void setSomeInt(int someInt) {
+    this.someInt = Callee.someInt + someInt;
   }
+
+  public void testAPI() {
+    int k = getSomeInt();
+    DummyAPI api = new DummyAPI(k);
+    setSomeInt(api.getNum());
+  }
+
 }
