@@ -5,7 +5,7 @@ public class DummyAPI {
 
 
   public DummyAPI(int num) {
-    this.num = num;
+    this.num = num + 1;
   }
 
   public int getNum() {
