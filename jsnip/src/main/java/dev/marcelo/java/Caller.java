@@ -1,6 +1,7 @@
 package dev.marcelo.java;
 
 import dev.marcelo.dep.DummyAPI;
+import dev.marcelo.blib.RandomAPI;
 
 import dev.marcelo.java.pck.Callee;
 import dev.marcelo.java.pck.MEnum;
@@ -24,6 +25,8 @@ public class Caller {
   public void testAPI() {
     int k = getSomeInt();
     DummyAPI api = new DummyAPI(k);
+    RandomAPI rapi = new RandomAPI();
+    String s = rapi.toString();
     setSomeInt(api.getNum());
   }
 
