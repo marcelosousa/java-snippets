@@ -11,7 +11,7 @@ public class Caller {
   private final MEnum e = MEnum.ENUMA;
 
   public Caller(int someInt) {
-    this.someInt = someInt;
+    this.someInt = someInt + 1;
   }
 
   public int getSomeInt() {
