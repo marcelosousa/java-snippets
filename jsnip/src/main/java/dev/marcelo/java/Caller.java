@@ -19,15 +19,15 @@ public class Caller {
   }
 
   public void setSomeInt(int someInt) {
-    this.someInt = Callee.someInt + someInt;
+    this.someInt = Callee.someInt + someInt + 1;
   }
 
   public void testAPI() {
     int k = getSomeInt();
-    DummyAPI api = new DummyAPI(k);
+    DummyAPI api = new DummyAPI(k+1);
     RandomAPI rapi = new RandomAPI();
     String s = rapi.toString();
-    setSomeInt(api.getNum());
+    setSomeInt(api.getNum()+1);
   }
 
 }
