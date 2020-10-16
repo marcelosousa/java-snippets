@@ -1,4 +1,4 @@
 # java-snippets
 
-This is a test project
+This is a project
 
