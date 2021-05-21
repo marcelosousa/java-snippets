@@ -5,8 +5,8 @@ public class DummyAPI {
 
 
   public DummyAPI(int num) {
-    // This is version 3.0
-    this.num = num + 2;
+    // This is version 4.0
+    this.num = num + 3;
   }
 
   public int getNum() {
