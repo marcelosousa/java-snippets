@@ -5,7 +5,7 @@ public class DummyAPI {
 
 
   public DummyAPI(int num) {
-    // This is version 3.0
+    // This is version 3.1
     this.num = num + 2;
   }
 
